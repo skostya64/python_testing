@@ -3,7 +3,7 @@ from selenium import webdriver
 
 class Application:
 
-    def _init_(self):
+    def __init__(self):
         self.wd = webdriver.Firefox(capabilities={"marionette": False})
         self.wd.implicitly_wait(60)
 
