@@ -30,6 +30,7 @@ class Application:
     def create_new(self, new):
         wd = self.wd
         self.open_home_page()
+        self.open_add_new_page()
         # init new creation
         wd.find_element_by_name("firstname").click()
         # fill new firm
